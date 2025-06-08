@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { Suspense } from "react";
 
 import LoginForm from "@/components/auth/login-form";
 
 export const metadata = {
   title: "Login",
-  description: "Login to your Kanbask account"
+  description: "Login to your Kanbask account",
 };
 
 export default function LoginPage() {
@@ -21,7 +22,9 @@ export default function LoginPage() {
         />
       </div>
       <div className="flex-1 max-w-[500px] p-12 shadow-lg bg-ghost-white flex flex-col justify-center ">
-        <LoginForm />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LoginForm />
+        </Suspense>
       </div>
     </div>
   );
