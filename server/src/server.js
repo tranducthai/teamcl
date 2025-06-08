@@ -42,8 +42,8 @@ const startServer = () => {
     });
   });
 
-  const PORT = process.env.APP_PORT || 8080;
-  const HOST = process.env.APP_HOST || "localhost";
+  const PORT = process.env.PORT || 8080;
+  const HOST = process.env.HOST || "localhost";
 
   server.listen(PORT, () => {
     console.log(`Server is running at http://${HOST}:${PORT}`);
