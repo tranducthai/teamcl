@@ -1,0 +1,30 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: kanbask-backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/usr/src/app
+      - server_yarn_cache:/usr/src/app/.yarn_cache
+    command: yarn dev
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: kanbask-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+      - client_yarn_cache:/usr/src/app/.yarn_cache
+    command: yarn dev
+
+volumes:
+  server_yarn_cache:
+  client_yarn_cache:
