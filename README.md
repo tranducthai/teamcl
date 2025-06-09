@@ -69,7 +69,7 @@ kanbask/
 
 ```bash
 git clone https://github.com/tranducthai/teamcl.git
-cd kanbask
+cd teamcl
 ```
 
 2. Build and start the containers:
@@ -96,7 +96,6 @@ docker-compose down
 Here is an example `docker-compose.yml` file used in this project:
 
 ```yaml
-version: "3.8"
 
 services:
   server:
