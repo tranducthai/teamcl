@@ -58,7 +58,7 @@ Kanbask is a collaborative project management platform designed to help individu
 - [Docker](https://docs.docker.com/get-docker/) installed on your machine
 - [Docker Compose](https://docs.docker.com/compose/install/) installed
 
-### Project Structure
+## Project Structure
 
 kanbask/
 ├── client/ # Frontend app (Next.js)
@@ -97,4 +97,8 @@ bash
 Sao chép
 Chỉnh sửa
 docker-compose down
+css
+Sao chép
+Chỉnh sửa
+
 
