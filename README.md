@@ -59,12 +59,14 @@ Kanbask is a collaborative project management platform designed to help individu
 - [Docker Compose](https://docs.docker.com/compose/install/) installed
 
 ### Project Structure
-
 kanbask/
 ├── client/ # Frontend app (Next.js)
 ├── server/ # Backend app (Express.js)
 ├── docker-compose.yml
 └── README.md
+
+bash
+
 
 ### How to Run
 
@@ -75,7 +77,7 @@ git clone https://github.com/yourusername/kanbask.git
 cd kanbask
 Build and start the containers:
 
-
+bash
 docker-compose up --build
 Access the applications in your browser:
 
@@ -85,4 +87,6 @@ Backend (API): http://localhost:8080
 
 To stop the containers, press Ctrl+C and then run:
 
+bash
 docker-compose down
+
