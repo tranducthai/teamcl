@@ -75,10 +75,11 @@ bash
 ```bash
 git clone https://github.com/yourusername/kanbask.git
 cd kanbask
-Build and start the containers:
+2. Build and start the containers:
 
-bash
+```bash
 docker-compose up --build
+
 Access the applications in your browser:
 
 Frontend (Client): http://localhost:3000
@@ -87,6 +88,6 @@ Backend (API): http://localhost:8080
 
 To stop the containers, press Ctrl+C and then run:
 
-bash
+```bash
 docker-compose down
 
